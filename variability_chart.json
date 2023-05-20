@@ -1,0 +1,68 @@
+{
+    "data": {
+        "name": "dataset"
+    },
+    "vconcat": [
+        {
+            "facet": {
+                "column": {
+                    "field": "opid",
+                    "header": {
+                        "title": "",
+                        "labelOrient": "bottom",
+                        "labelExpr": "null"
+                    },
+                    "title": null
+                },
+                "align": "none"
+            },
+            "spec": {
+                "facet": {
+                    "column": {
+                        "field": "sky",
+                        "header": {
+                            "title": "",
+                            "labelOrient": "bottom"
+                        },
+                        "title": null
+                    }
+                },
+                "spec": {
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "point",
+                                "tooltip": true
+                            },
+                            "encoding": {
+                                "x": {
+                                    "field": "state",
+                                    "type": "nominal",
+                                    "title": ""
+                                },
+                                "y": {
+                                    "field": "birds_seen",
+                                    "type": "quantitative"
+                                },
+                                "color": {
+                                    "field": "species",
+                                    "type": "nominal",
+                                    "scale": {
+                                        "scheme": "pbiColorNominal"
+                                    }
+                                }
+                            },
+                            "params": [
+                                {
+                                    "name": "_pan_and_zoom",
+                                    "select": "interval",
+                                    "bind": "scales"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
