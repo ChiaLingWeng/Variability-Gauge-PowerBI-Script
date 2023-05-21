@@ -62,3 +62,6 @@ You may use variability_chart.pbix directly to get the deneb plug-in.
                 }
             }
 ```
+### License
+>MIT License\
+>Copyright (c) 2023 Weng, Chia-Ling
